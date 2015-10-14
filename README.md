@@ -1,12 +1,6 @@
 # ccc-loan-calc-ng-grunt
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.12.1.
+Please [view the example site here](http://minorgod.github.io/CCC_LoanCalc_ngGrunt/dist)
 
-## Build & development
 
-Run `grunt` for building and `grunt serve` for preview.
 
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
