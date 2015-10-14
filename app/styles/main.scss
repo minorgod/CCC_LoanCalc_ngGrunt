@@ -1,0 +1,161 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$flaticon-font-path: "./fonts/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+//import our flaticon font definitions
+@import "flaticon.scss";
+
+/* Begin sticky footer styles */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  color:#ccc;
+  background-color: #666;
+  padding:1em;
+}
+
+/* End sticky footer styles */
+
+address { 
+    display: inline-block;
+    font-style: italic;
+    background: #EFEFEF;
+    width:auto;
+    padding:2em;
+    border-radius:5px;
+}
+
+/* Custom styles for icons in form fields */
+
+.center-block {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.input-group .icon-addon .form-control {
+    border-radius: 0px 4px 4px 0;
+}
+
+
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+
+//global form styles for hover and focus effects
+/*
+.icon-addon .form-control:focus + .glyphicon,
+.icon-addon:hover .glyphicon{
+    color: #2580db;
+}
+*/
+.form-control:focus,
+.form-control:hover {
+    background-color:#FFFFDD;
+}
+
+
+//small icon styles
+.icon-addon.addon-sm .glyphicon {
+    margin-left: 0;
+    font-size: 12px;
+    left: 5px;
+    top: -1px
+}
+
+//small form control styles
+.icon-addon.addon-sm .form-control {
+    height: 30px;
+    padding: 5px 10px 5px 28px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+//normal and medium icon styles
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon{
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: -2px
+}
+
+//normal and medium form control styles
+.icon-addon.addon-md .form-control,
+.icon-addon .form-control {
+    padding-left: 30px;
+    float: left;
+    font-weight: normal;
+}
+
+
+//large icon styles
+.icon-addon.addon-lg .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    left: 11px;
+    top: 4px;
+}
+
+//large form control styles
+.icon-addon.addon-lg .form-control {
+    line-height: 1.33;
+    height: 46px;
+    font-size: 18px;
+    padding: 10px 16px 10px 40px;
+}
+
+
+//overrides for right-positioning
+.icon-addon .glyphicon.addon-rt
+.icon-addon.addon-sm .glyphicon.addon-rt,
+.icon-addon.addon-md .glyphicon.addon-rt,
+.icon-addon.addon-lg .glyphicon.addon-rt{
+    left: auto;
+    right: 10px;
+}
+
+//reset left padding on form fields where icon is positioned on right
+.icon-addon.addon-md.addon-rt .form-control,
+.icon-addon.addon-lg.addon-rt .form-control,
+.icon-addon.addon-rt .form-control {
+    padding-left: 12px;
+}
+.icon-addon.addon-sm.addon-rt .form-control{
+    padding-left: 10px;
+}
+
+
+
