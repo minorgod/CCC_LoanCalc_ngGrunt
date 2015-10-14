@@ -348,11 +348,25 @@ module.exports = function (grunt) {
         }]
       }
     },
-
+/*
     ngtemplates: {
       dist: {
         options: {
           module: 'cccLoanCalcNgGruntApp',
+          htmlmin: '<%= htmlmin.dist.options %>',
+          usemin: 'scripts/scripts.js'
+        },
+        cwd: '<%= yeoman.app %>',
+        src: 'views/*.html',
+        dest: '.tmp/templateCache.js'
+      }
+    },
+	*/
+	
+	ngtemplates: {
+      dist: {
+        options: {
+          module: '<%= scriptAppName %>',
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },
