@@ -269,7 +269,8 @@ module.exports = function (grunt) {
     // concat, minify and revision files. Creates configurations in memory so
     // additional tasks can operate on them
     useminPrepare: {
-      html: '<%= yeoman.app %>/**.html',
+      //html: '<%= yeoman.app %>/index.html',
+      html: '<%= yeoman.app %>/{,*/}*.html',
       options: {
         dest: '<%= yeoman.dist %>',
         flow: {
@@ -360,7 +361,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.dist %>',
-          src: ['**.html','views/{,*/}*.html'],
+          src: ['<%= yeoman.dist %>/{,*/}*.html', '<%= yeoman.dist %>/views/{,*/}*.html'],
           dest: '<%= yeoman.dist %>'
         }]
       }
@@ -370,7 +371,7 @@ module.exports = function (grunt) {
 	ngtemplates: {
       dist: {
         options: {
-          module: '<%= scriptAppName %>',
+          module: 'cccLoanCalcNgGruntApp',
           htmlmin: '<%= htmlmin.dist.options %>',
           usemin: 'scripts/scripts.js'
         },
